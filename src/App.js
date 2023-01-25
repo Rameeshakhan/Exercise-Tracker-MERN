@@ -7,6 +7,8 @@ import EditExercise from "./components/edit-exercise";
 import CreateExercise from "./components/create-exercise";
 import CreateUser from "./components/create-user";
 
+
+// routing -> BrowserRouter -> Routes -> Route.
 function App() {
   return (
     <BrowserRouter>

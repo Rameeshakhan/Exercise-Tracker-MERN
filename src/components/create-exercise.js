@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
+
+//class based components
 export default class CreateExercise extends Component {
     //constructor
     constructor(props){
@@ -14,7 +16,6 @@ export default class CreateExercise extends Component {
         this.onChangeDate = this.onChangeDate.bind(this);
         this.onSubmit = this.onSubmit.bind(this)
 
-        //create variables in react
         this.state = {
             username: "",
             description: "",
