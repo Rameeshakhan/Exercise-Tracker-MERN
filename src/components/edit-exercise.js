@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -25,7 +25,8 @@ export default class EditExercise extends Component {
   
  
   componentDidMount() {
-    axios.get('http://localhost:5000/exercise/'+this.props.match.params.id)
+    const { params } = this.props.match.id;
+    axios.get('http://localhost:5000/exercise/'+params)
       .then(response => {
         this.setState({
           username: response.data.username,
@@ -95,6 +96,7 @@ export default class EditExercise extends Component {
   }
 
   render() {
+    
     return (
     <div>
       <h3>Edit Exercise Log</h3>
