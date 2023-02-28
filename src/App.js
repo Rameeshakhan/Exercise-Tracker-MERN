@@ -8,6 +8,7 @@ import CreateExercise from "./components/create-exercise";
 import CreateUser from "./components/create-user";
 
 
+
 // routing -> BrowserRouter -> Routes -> Route.
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/create" element={<CreateExercise/>} />
         <Route path="/user" element={<CreateUser/>} />
       </Routes>
+
       </div>
     </BrowserRouter>
   );
